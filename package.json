@@ -1,0 +1,68 @@
+{
+  "name": "ecommerce_website_sample",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://test.northcott.com/website",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tippyjs/react": "^4.2.6",
+    "ag-grid-community": "^27.1.0",
+    "ag-grid-react": "^27.1.0",
+    "axios": "^1.1.3",
+    "bootstrap": "^5.2.2",
+    "dompurify": "^2.4.1",
+    "html-react-parser": "^3.0.4",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "nanoid": "^4.0.2",
+    "react": "^18.2.0",
+    "react-beforeunload": "^2.5.3",
+    "react-bootstrap": "^2.5.0",
+    "react-bootstrap-typeahead": "^6.0.0",
+    "react-data-table-component": "^7.5.3",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.38.0",
+    "react-icons": "^4.6.0",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-loading-skeleton": "^3.3.1",
+    "react-password-strength-bar": "^0.4.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "react-step-progress-bar": "^1.0.3",
+    "react-toastify": "^9.1.1",
+    "sweetalert2": "^11.7.20",
+    "unique-random": "^3.0.0",
+    "validator": "^13.7.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  }
+}

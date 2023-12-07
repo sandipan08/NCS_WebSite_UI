@@ -1,0 +1,7 @@
+:root {
+  --global-font: 'DM Serif Display Regular';
+}
+
+body {
+  font-family: var(--global-font);
+}

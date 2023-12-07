@@ -1,0 +1,22 @@
+.card {
+    border: none;
+}
+
+/* #whatsNewDiv .col {
+    display: flex;
+}
+
+#whatsNewDiv .col:first-child {
+    justify-content: end;
+} */
+
+/* #whatsNewDiv .col:last-child {
+    justify-content: start;
+} */
+
+@media (max-width:1000px) {
+    #whatsNewDiv .col {
+        justify-content: center !important;
+        padding: 0 !important;
+    }
+}

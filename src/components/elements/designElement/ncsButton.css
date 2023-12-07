@@ -1,0 +1,24 @@
+#thirdlyDefaultButton:hover {
+    background-color: black !important;
+    border: black !important;
+    color: #FFFFFF !important;
+}
+
+#primaryDefaultButton {
+    background-color: #E2A856 !important;
+    border: #E2A856 !important;
+    color: #FFFFFF !important;
+}
+
+#footerDefaultButton {
+    background-color: #E2A856 !important;
+    border: #E2A856 !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+#footerDefaultButton:hover {
+    background-color: #FFFFFF !important;
+    border: #E2A856 !important;
+    color: #E2A856 !important;
+}
