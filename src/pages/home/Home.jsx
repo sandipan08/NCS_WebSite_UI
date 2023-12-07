@@ -86,7 +86,7 @@ export default function Home() {
                 </Row>
                 <Row md={1} className=''>
                     <Col className='d-flex justify-content-center'>
-                        <Card className='text-center'>
+                        <Card className='text-center' style={{ width: '56rem', }}>
                             <Card.Img variant="top" src={banner3} />
                             <Card.Body>
                                 <Card.Title>Promotion Collection Example</Card.Title>
