@@ -11,7 +11,9 @@ import ctaBanner from '../../assets/images/cta-banner.jpg';
 import fabric from '../../assets/images/products/fabric.jpg';
 import banner3 from '../../assets/images/banner-3.jpg';
 import NCSButton from '../../components/elements/designElement/NCSButton';
-import "./home.css"
+import "./home.css";
+import cat3 from '../../assets/images/products/cat3.jpg';
+import comingSoon from '../../assets/images/products/coming-soon.jpg';
 export default function Home() {
 
     const { dispatch, user } = useContext(UserContext)
@@ -56,14 +58,14 @@ export default function Home() {
         <div>
             <HomeSliders />
             <div className='mt-5' id='whatsNewDiv'>
-                <Row md={2}>
+                <Row md={2} className='mt-5' >
                     <Col className='d-flex justify-content-end pe-5 pb-3'>
                         <h2 className='' style={{ width: '25rem', fontWeight: 'bold' }}>What's New</h2>
                     </Col>
                 </Row>
-                <Row md={2} className="">
+                <Row md={2} xs={1} sm={1} className="">
                     <Col className='d-flex justify-content-end pe-5'>
-                        <Card style={{ width: '25rem', height: '24rem' }}>
+                        <Card style={{ width: '25rem', height: '24rem' }} className='cardWithNoBorder'>
                             <Card.Img variant="top" src={ctaBanner} />
                             <Card.Body>
                                 <Card.Title>Promotion Example</Card.Title>
@@ -72,7 +74,7 @@ export default function Home() {
                         </Card>
                     </Col>
                     <Col className='d-flex justify-content-start ps-5'>
-                        <Card style={{ width: '25rem', height: '24rem' }}>
+                        <Card style={{ width: '25rem', height: '24rem' }} className='cardWithNoBorder'>
                             <Card.Img variant="top" src={ctaBanner} />
                             <Card.Body>
                                 <Card.Title>New Collection Example</Card.Title>
@@ -81,180 +83,107 @@ export default function Home() {
                         </Card>
                     </Col>
                 </Row>
-                <Row md={1}>
-                    <Col className='d-flex justify-content-center'>
-                        <h2 className='' style={{ fontWeight: 'bold' }}>What's New</h2>
-                    </Col>
-                </Row>
-                <Row md={1} className=''>
-                    <Col className='d-flex justify-content-center'>
-                        <Card className='text-center' style={{ width: '56rem' }}>
-                            <Card.Img variant="top" src={banner3} />
-                            <Card.Body>
-                                <Card.Title>Promotion Collection Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-                <Row md={1}>
-                    <Col className='whoAreYou'>
-                        <div className='container'>
-                            <p> <h1>Northcott Fabrics</h1></p>
-                            <p> <span>We are the home of “cottons that feel like silk”. Our fine cotton prints with a silky hand can be found in quilt and craft shops around the world. We are known for our superior quality and admirable customer service. The quilting industry is where we have built a name for ourselves and a community of great customers, distributors and partners. We design and partner with the best designers to produce fabrics to sell wholesale to your local shops and distributors.</span></p>
-                            <NCSButton props={{ buttonType: 'footerDefaultButton', buttonName: 'LEARN MORE' }} />
-                        </div>
-                    </Col>
-                </Row>
-                <Row md={1}>
-                    <Col className='d-flex justify-content-center mt-5 mb-3'>
-                        <h2 className='' style={{ fontWeight: 'bold' }}>Featured Categories</h2>
-                    </Col>
-                </Row>
-                {/* <div class="grid-container ms-10">
-                    <div class="grid-item">
-                        <Card className='text-center'>
-                            <Card.Img variant="top" src={banner3} />
-                            <Card.Body>
-                                <Card.Title>Promotion Collection Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card></div>
-                    <div class="grid-item">
-                        <Card className='text-center'>
-                            <Card.Img variant="top" src={banner3} />
-                            <Card.Body>
-                                <Card.Title>Promotion Collection Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card></div>
-                    <div class="grid-item">
-                        <Card className='text-center'>
-                            <Card.Img variant="top" src={banner3} />
-                            <Card.Body>
-                                <Card.Title>Promotion Collection Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card>
+            </div>
+            <Row md={1}>
+                <Col className='d-flex justify-content-center'>
+                    <h2 className='' style={{ fontWeight: 'bold' }}>What's New</h2>
+                </Col>
+            </Row>
+            <Row md={1} className=''>
+                <Col className='d-flex justify-content-center'>
+                    <Card className='cardWithNoBorder text-center' style={{ width: '56rem' }}>
+                        <Card.Img variant="top" src={banner3} />
+                        <Card.Body>
+                            <Card.Title>Promotion Collection Example</Card.Title>
+                            <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+            <Row md={1}>
+                <Col className='whoAreYou'>
+                    <div className='container'>
+                        <p> <h1>Northcott Fabrics</h1></p>
+                        <p> <span>We are the home of “cottons that feel like silk”. Our fine cotton prints with a silky hand can be found in quilt and craft shops around the world. We are known for our superior quality and admirable customer service. The quilting industry is where we have built a name for ourselves and a community of great customers, distributors and partners. We design and partner with the best designers to produce fabrics to sell wholesale to your local shops and distributors.</span></p>
+                        <NCSButton props={{ buttonType: 'footerDefaultButton', buttonName: 'LEARN MORE' }} />
                     </div>
-                    <div class="grid-item">4</div>
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">6</div>
-                </div> */}
-
-                {/* <Row md={3} className="container-flex">
-                    <Col className='d-flex justify-content-end pe-5'>
-                        <Card style={{ width: '25rem', height: '24rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
+                </Col>
+            </Row>
+            <Row md={1}>
+                <Col className='d-flex justify-content-center mt-5 mb-3'>
+                    <h2 className='' style={{ fontWeight: 'bold' }}>Featured Categories</h2>
+                </Col>
+            </Row>
+            <div className='d-flex justify-content-center' id='featuredCategoriesDiv'>
+                <Row xs={1} sm={1} md={3} className="container g-5">
+                    <Col key={1} className='d-flex justify-content-center' >
+                        <Card className='featuredCategoriesCard'>
+                            <Card.Img variant="top" src={cat3} />
                             <Card.Body>
-                                <Card.Title>Promotion Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col className='d-flex justify-content pe-5'>
-                        <Card style={{ width: '25rem', height: '24rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
-                            <Card.Body>
-                                <Card.Title>Promotion Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col className='d-flex justify-content ps-5'>
-                        <Card style={{ width: '25rem', height: '24rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
-                            <Card.Body>
-                                <Card.Title>New Collection Example</Card.Title>
-                                <NCSButton props={{ buttonType: 'thirdlyDefaultButton', buttonName: 'Shop Now' }} />
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row> */}
-
-                <Row xs={1} md={3} className="container g-3" style={{ alignContent: 'center' }}>
-
-                    <Col key={1}>
-                        <Card style={{ width: '20rem', height: '20rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Holiday 2023 Release Collections</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    <a>Shop Now -</a>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col key={2}>
-                        <Card style={{ width: '20rem', height: '20rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
+                    <Col key={2} className='d-flex justify-content-center' >
+                        <Card >
+                            <Card.Img variant="top" src={cat3} />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>September 2023 Release Collections</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    <a>Shop Now -</a>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col key={3}>
-                        <Card style={{ width: '20rem', height: '20rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
+                    <Col key={3} className='d-flex justify-content-center' >
+                        <Card >
+                            <Card.Img variant="top" src={cat3} />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>September 2023 Collection Precuts</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    <a>Shop Now -</a>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col key={4}>
-                        <Card style={{ width: '20rem', height: '20rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
+                    <Col key={4} className='d-flex justify-content-center'>
+                        <Card  >
+                            <Card.Img variant="top" src={cat3} />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>April 2023 Release Collections</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    <a>Shop Now -</a>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col key={5}>
-                        <Card style={{ width: '20rem', height: '20rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
+                    <Col key={5} className='d-flex justify-content-center'>
+                        <Card >
+                            <Card.Img variant="top" src={cat3} />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>April 2023 Collection Precuts</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    <a>Shop Now -</a>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col key={6}>
-                        <Card style={{ width: '20rem', height: '20rem' }}>
-                            <Card.Img variant="top" src={ctaBanner} />
+                    <Col key={6} className='d-flex justify-content-center'>
+                        <Card >
+                            <Card.Img variant="top" src={comingSoon} />
                             <Card.Body>
-                                <Card.Title>Card title</Card.Title>
+                                <Card.Title>Coming Soon</Card.Title>
                                 <Card.Text>
-                                    This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit
-                                    longer.
+                                    <a>Shop Now -</a>
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
 
                 </Row>
-
             </div>
         </div >
     )
