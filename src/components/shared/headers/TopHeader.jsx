@@ -3,7 +3,6 @@ import { Button, Container } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { CustomerContext } from '../../../states/contexts/CustomerContext';
 import { UserContext } from '../../../states/contexts/UserContext'
-
 import NorthcottIcon from '../../../assets/images/logo/Northcott - Logo.png'
 import BanyanBatiks from '../../../assets/images/logo/Banyan Logo.png'
 import PatrikLose from '../../../assets/images/logo/Logo-Patrick Lose.png'
@@ -13,6 +12,7 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import ApiService from '../../../helpers/ApiServices';
 import { CustomerService, TokenService } from '../../../helpers/StorageServices';
 import { logout, showMessage } from '../../../helpers/Utils';
+import { BsBagFill } from "react-icons/bs";
 
 
 export default function TopHeader() {
@@ -119,9 +119,9 @@ export default function TopHeader() {
                             </div>
                             <div
                                 class="col-xxl-1 col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0 mx-auto d-xxl-block d-xl-block d-lg-block d-none">
-                              <div style={{display: 'flex', justifyContent: 'space-between'}}> <a href='#login' style={{textDecoration: 'none',color: 'white'}}>Login</a> | <a href="" className="text-white me-4 anchorTagTextDecorationNone">
-                                            <i className="fa fa-cart" style={{ fontSize: '14px', color: "#ffff" }}>cart</i>
-                                        </a></div>
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}> <a href='#login' style={{ textDecoration: 'none', color: 'white' }}>Login</a> | <a href="" className="text-white me-4 anchorTagTextDecorationNone">
+                                    <BsBagFill />
+                                </a></div>
                             </div>
                             <div
                                 class="col-xxl-1 col-xl-1 col-lg-1 col-md-0 col-sm-0 col-0 mx-auto d-xxl-block d-xl-block d-lg-block d-none">

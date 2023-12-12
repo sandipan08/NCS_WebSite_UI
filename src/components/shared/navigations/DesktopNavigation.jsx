@@ -20,11 +20,11 @@ export default function DesktopNavigation() {
     let customers = JSON.parse(localStorage.getItem("PCTeRP.CUSTOMER_IDS"))
     let recentCustomers = customers?.length && customers?.slice(-5)
     return (
-        <nav className="navbar " style={{ fontSize: "12px" }}>
+        <nav className="navbar" style={{ fontSize: "12px" }}>
             {/* desktop-navigation-menu */}
             <div className="app-container text-xl-middle" >
                 <Navbar expand="md xl xxl" >
-                    <Container >
+                    <div >
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" style={{ justifyContent: 'center' }}>
                             <Nav className='justify-content-center'>
@@ -94,7 +94,7 @@ export default function DesktopNavigation() {
                                 <Nav.Link href="#link" className='navItem' >RAPID ORDER</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
-                    </Container>
+                    </div>
                 </Navbar>
 
             </div>

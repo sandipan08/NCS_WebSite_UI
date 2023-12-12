@@ -17,7 +17,7 @@ import ApiService from '../../../helpers/ApiServices'
 import GlobalSearchSelectField from '../../elements/fields/GlobalSearchSelectField'
 import { WishListContext } from '../../../states/contexts/wishListContext'
 import { CustomerContext } from '../../../states/contexts/CustomerContext'
-
+import { BsBag } from "react-icons/bs";
 
 export default function InnerHeader() {
     const [cartLength, setCartLength] = useState([]);
@@ -234,25 +234,25 @@ export default function InnerHeader() {
     return (
         <div className="header-main" id='innerHeader'>
             <nav className="flex navbar navbar-expand-lg navbar-light">
-               
+
                 <div className="container-fluid">
                     <span className="navbar-brand w-100 text-center ps-xl-5 ps-xxl-5 ps-lg-4 ps-0" href="#">
                         <img src={BrandLogo}
-                            className="" alt="" style={{ maxWidth: '50%', maxHeight: '40px',  minHeight: '5px' }} />
+                            className="" alt="" style={{ maxWidth: '50%', maxHeight: '40px', minHeight: '5px' }} />
                     </span>
                     <span id='searchSpan'>
-                    <div style={{display: 'flex', justifyContent: 'space-between'}}><input className="form-control" type="search" placeholder="Search" aria-label="Search" id='search' /> <span  className='addToCatrSmallScreen d-xxl-none d-xl-none d-md-none d-block'>cart</span></div>
-                    </span> 
+                        <div style={{ display: 'flex', justifyContent: 'space-between' }}><input className="form-control" type="search" placeholder="Search" aria-label="Search" id='search' /> <span className='addToCatrSmallScreen d-xxl-none d-xl-none d-md-none d-block'><BsBag fontSize="1.5em" /></span></div>
+                    </span>
 
-                    
-                    
-                    
+
+
+
                     {/* <form className="">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     </form> */}
                 </div>
-                
-                
+
+
             </nav >
             {/* <div className="app-container">
 

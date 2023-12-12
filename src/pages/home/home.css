@@ -2,17 +2,38 @@
     border: none;
 }
 
-/* #whatsNewDiv .col {
-    display: flex;
+.whoAreYou {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    overflow: hidden;
+    /* background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(16, 16, 16, 0.8)), url("https://ik.imagekit.io/ikmedia/blog/hero-image.jpeg"); */
+    background: linear-gradient(rgba(18, 18, 18, 0.8), rgba(16, 16, 16, 0.8));
+    background-image: image(whoAreYouImage);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#whatsNewDiv .col:first-child {
-    justify-content: end;
-} */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
 
-/* #whatsNewDiv .col:last-child {
-    justify-content: start;
-} */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 
 @media (max-width:1000px) {
     #whatsNewDiv .col {
