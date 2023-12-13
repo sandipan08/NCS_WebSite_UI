@@ -14,6 +14,9 @@ import NCSButton from '../../components/elements/designElement/NCSButton';
 import "./home.css";
 import cat3 from '../../assets/images/products/cat3.jpg';
 import comingSoon from '../../assets/images/products/coming-soon.jpg';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import cat2 from '../../assets/images/products/cat2.jpg';
 export default function Home() {
 
     const { dispatch, user } = useContext(UserContext)
@@ -53,6 +56,26 @@ export default function Home() {
         setCustomer()
 
     }, []);
+
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
 
     return (
         <div>
@@ -182,9 +205,37 @@ export default function Home() {
                             </Card.Body>
                         </Card>
                     </Col>
-
                 </Row>
             </div>
+
+            <Row md={1}>
+                <Col className='d-flex justify-content-center mt-5 mb-3'>
+                    <h2 className='' style={{ fontWeight: 'bold' }}>Follow us on social media as we always have something<br></br> exciting to share #NorthcottFabrics</h2>
+                </Col>
+            </Row>
+            {/* <Row md={1}>
+                <Col className='d-flex justify-content-center mt-5 mb-3'> */}
+            <div>
+                <Carousel responsive={responsive} className=''>
+                    <div>  <Card >
+                        <Card.Img variant="top" src={ctaBanner} />
+                    </Card></div>
+                    <div>  <Card >
+                        <Card.Img variant="top" src={ctaBanner} />
+                    </Card></div>
+                    <div>  <Card >
+                        <Card.Img variant="top" src={ctaBanner} />
+                    </Card></div>
+                    <div>  <Card >
+                        <Card.Img variant="top" src={ctaBanner} />
+                    </Card></div>
+                    <div>  <Card >
+                        <Card.Img variant="top" src={ctaBanner} />
+                    </Card></div>
+                </Carousel>
+            </div>
+            {/* </Col>
+            </Row> */}
         </div >
     )
 }
